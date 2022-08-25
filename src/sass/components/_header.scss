@@ -1,0 +1,18 @@
+.header {
+  background-color: teal;
+}
+.page-nav {
+  display: flex;
+  margin-left: auto;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.page-nav__item + .page-nav__item {
+  margin-left: 38px;
+}
+.name {
+  color: tomato;
+  font-size: 100px;
+}
