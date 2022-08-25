@@ -1,18 +1,43 @@
 .header {
-  background-color: teal;
+  position: absolute;
+  width: 100%;
+  padding-top: 21px;
+  padding-left: 28px;
 }
-.page-nav {
-  display: flex;
-  margin-left: auto;
 
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.nav {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
 }
-.page-nav__item + .page-nav__item {
-  margin-left: 38px;
+
+.logo__link {
+  display: flex;
+  margin-bottom: 10px;
+
+  font-size: 32px;
+  line-height: 1.32;
+
+  color: var(--secondary-text-color);
 }
-.name {
-  color: tomato;
-  font-size: 100px;
+
+.logo__icon {
+  fill: var(--accent-color);
+  margin-right: 6px;
+}
+
+.logo__link--green {
+  color: var(--accent-color);
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list__item + .nav-list__item {
+  margin-left: 13px;
+}
+
+.nav-list__link {
+  color: var(--secondary-text-color);
 }
