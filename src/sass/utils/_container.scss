@@ -3,6 +3,8 @@
   padding-left: 0;
   padding-right: 0;
   margin: 0 auto;
+  padding-left: 28px;
+  padding-right: 19px;
 
   @include mobile {
     width: 320px;
@@ -10,9 +12,13 @@
 
   @include tablet {
     width: 768px;
+    padding-left: 41px;
+    padding-right: 37px;
   }
 
   @include desktop {
-    width: 1200px;
+    width: 1290px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
