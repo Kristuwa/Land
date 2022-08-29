@@ -1,11 +1,48 @@
-<div class="container">
-  <section class="solutions">
-    <img
-      class="team-photo"
-      src="./images/team-desktop.jpeg"
-      alt="team-photo"
-      width="680"
-    />
+<section class="solutions">
+  <div class="container">
+    <div class="solutions__img">
+      <picture>
+        <source
+          srcset="./images/team-desktop.jpg 1x, ./images/team-desktop2x.jpg 2x"
+          type="image/jpg"
+          media="(min-width: 1360px)"
+          width="680"
+          height="460"
+        />
+
+        <source
+          srcset="./images/team-tablet.jpg 1x, ./images/team-tablet2x.jpg 2x"
+          type="image/jpg"
+          media="(min-width: 768px)"
+          width="384"
+          height="564"
+        />
+
+        <source
+          srcset="./images/team-mobile.jpg 1x, ./images/team-mobile2x.jpg 2x"
+          type="image/jpg"
+          media="(min-width: 425px)"
+          width="425"
+          height="220"
+        />
+
+        <source
+          srcset="./images/team-mobile.jpg 1x, ./images/team-mobile2x.jpg 2x"
+          type="image/jpg"
+          media="(min-width: 320px)"
+          width="320"
+          height="220"
+        />
+
+        <img
+          src="./images/team-mobile.jpg"
+          alt="team-photo"
+          width="320"
+          height="220"
+        />
+      </picture>
+    </div>
+
     <div class="thumb">
       <p class="solutions__pretitle">What you are looking for</p>
       <h2 class="solutions__title">We provide bespoke solutions</h2>
@@ -16,22 +53,7 @@
         maiores deleniti?
       </p>
 
-      <button class="solutions_button" type="button">Read More</button>
+      <button class="solutions_button button" type="button">Read More</button>
     </div>
-  </section>
-</div>
-
-<a href="#" class="js-open-modal" data-modal="1">Открыть окно 1</a>
-<div class="modal" data-modal="1">
-  <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
-  <p class="modal__title">Заголовок окна 1</p>
-</div>
+  </div>
+</section>

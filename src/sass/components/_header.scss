@@ -1,18 +1,23 @@
 .header {
   position: absolute;
   width: 100%;
+  padding-top: 20px;
 
-  padding-right: 37px;
   text-align: center;
 }
 
 .header .container {
-  padding-top: 19px;
+  padding-right: 19px;
   padding-left: 19px;
 
   @include tablet {
-    padding-left: 37px;
+    padding-left: 41px;
     padding-right: 37px;
+  }
+
+  @include desktop {
+    padding-left: 50px;
+    padding-right: 45px;
   }
 }
 
@@ -79,5 +84,12 @@
 }
 
 .nav-list__link {
+  font-family: inherit;
   color: var(--secondary-text-color);
+  transition: color var(--time) var(--function-animate);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

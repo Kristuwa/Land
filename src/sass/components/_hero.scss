@@ -12,7 +12,7 @@
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url('../images/hero-mobile.jpeg');
+    url('../images/hero-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -27,7 +27,7 @@
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)
       ),
-      url('../images/hero-mobile2x.jpeg');
+      url('../images/hero-mobile2x.png');
   }
 
   @media screen and (min-width: 768px) {
@@ -39,7 +39,7 @@
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)
       ),
-      url('../images/hero-tablet.jpeg');
+      url('../images/hero-tablet.png');
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -50,12 +50,11 @@
           rgba(0, 0, 0, 0.4),
           rgba(0, 0, 0, 0.4)
         ),
-        url('../images/hero-tablet2x.jpeg');
+        url('../images/hero-tablet2x.png');
     }
   }
 
-  @media screen and (min-width: 1200px) {
-    max-width: 1360px;
+  @media screen and (min-width: 1360px) {
     height: 768px;
     padding-top: 279px;
     padding-bottom: 284px;
@@ -64,7 +63,7 @@
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)
       ),
-      url('../images/hero-desktop.jpeg');
+      url('../images/hero-desktop.png');
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -75,7 +74,7 @@
           rgba(0, 0, 0, 0.4),
           rgba(0, 0, 0, 0.4)
         ),
-        url('../images/hero-desktop2x.jpeg');
+        url('../images/hero-desktop2x.png');
     }
   }
 
@@ -89,7 +88,7 @@
 
     color: var(--hero-text-color);
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       margin-bottom: 25px;
 
       font-size: 55px;
@@ -118,7 +117,7 @@
   }
 }
 
-.hero .hero__link {
+.hero__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,20 +126,10 @@
   height: 45px;
   padding-left: 26px;
   padding-right: 30px;
-
-  background: var(--accent-color);
-  border-radius: 5px;
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--hero-text-color);
+  border: transparent;
 
   @include tablet {
     width: 165px;
     height: 48px;
-
-    font-size: 18px;
-    line-height: 1.6;
   }
 }
