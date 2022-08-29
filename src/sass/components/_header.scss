@@ -1,9 +1,19 @@
 .header {
   position: absolute;
   width: 100%;
-  padding-top: 21px;
 
+  padding-right: 37px;
   text-align: center;
+}
+
+.header .container {
+  padding-top: 19px;
+  padding-left: 19px;
+
+  @include tablet {
+    padding-left: 37px;
+    padding-right: 37px;
+  }
 }
 
 .nav {

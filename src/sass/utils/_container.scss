@@ -1,8 +1,7 @@
 .container {
   min-width: 320px;
   width: 100%;
-  padding-left: 19px;
-  padding-right: 19px;
+
   margin: 0 auto;
 
   @include mobile {
@@ -11,8 +10,6 @@
 
   @include tablet {
     width: 768px;
-    padding-left: 41px;
-    padding-right: 37px;
   }
 
   @include desktop {
