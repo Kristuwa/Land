@@ -1,63 +1,285 @@
-<section class="team team-section">
+<section class="team-section">
   <div class="container">
-    <p class="upper-text">Who we are</p>
-    <h2 class="section-title">Our Professional Team</h2>
-    <p class="bottom-text">
+    <p class="team-section__top-text">Who we are</p>
+    <h2 class="team-section__title">Our Professional Team</h2>
+    <p class="team-section__bottom-text">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
       sapiente!
     </p>
-    <ul class="team-list list">
-      <li class="team-member">
-        <img
-          src="/src/images/john.jpg"
-          alt="our-team-1"
-          width="420"
-          height="280"
-        />
-        <h3 class="member-name">John Doe</h3>
-        <p class="member-position">President</p>
-        <ul class="network-links list">
-          <li>
-            <a class="network-icon" href="#" rel="noopener nofollow noreferrer"
-              ><svg width="35" height="35">
-                <use href="#"></use></svg
-            ></a>
+    <ul class="card__list list">
+      <li class="card__item">
+        <picture>
+          <source
+            srcset="
+              ./images/team-01-desktop.jpg    1x,
+              ./images/team-01-desktop@2x.jpg 2x
+            "
+            type="image/jpg"
+            media="(min-width: 1360px)"
+            width="420"
+            height="280"
+          />
+
+          <source
+            srcset="
+              ./images/team-01-tablet.jpg    1x,
+              ./images/team-01-tablet@2x.jpg 2x
+            "
+            type="image/jpg"
+            media="(min-width: 768px)"
+            width="223"
+            height="148"
+          />
+
+          <source
+            srcset="
+              ./images/team-01-mobile.jpg    1x,
+              ./images/team-01-mobile@2x.jpg 2x
+            "
+            type="image/jpg"
+            media="(min-width: 320px)"
+            width="280"
+            height="186"
+          />
+
+          <img
+            src="./images/team-01-mobile.jpg"
+            alt="cup of coffe"
+            width="280"
+            height="186"
+          />
+        </picture>
+        <h3 class="card__title">John Doe</h3>
+        <p class="card__bottom-text">President</p>
+        <ul class="socpublic-list list">
+          <li class="socpublic__item">
+            <a
+              href="https://www.facebook.com"
+              class="socpublic__link link"
+              aria-label="Facebook"
+            >
+              <svg class="socpublic__icon" width="35" height="35">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socpublic__item">
+            <a
+              href="https://www.twitter.com"
+              class="socpublic__link link"
+              aria-label="Twitter"
+            >
+              <svg class="socpublic__icon" width="35" height="35">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="socpublic__item">
+            <a
+              href="https://www.youtube.com"
+              class="socpublic__link link"
+              aria-label="Youtube"
+            >
+              <svg class="socpublic__icon" width="35" height="35">
+                <use href="./images/icons.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socpublic__item">
+            <a
+              href="https://www.linkedin.com"
+              class="socpublic__link link"
+              aria-label="Linkedin"
+            >
+              <svg class="socpublic__icon" width="35" height="35">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </li>
-      <li class="team-member">
-        <img
-          src="/src/images/jane.jpeg"
-          alt="our-team-1"
-          width="420"
-          height="280"
-        />
-        <h3 class="member-name">Jane Doe</h3>
-        <p class="member-position">Vice President</p>
-        <ul class="network-links list">
-          <li>
-            <a class="network-icon" href="#" rel="noopener nofollow noreferrer"
-              ><svg width="35" height="35">
-                <use href="#"></use></svg
-            ></a>
+      <li class="card__item">
+        <picture>
+          <source
+            srcset="
+              ./images/team-02-desktop.jpg    1x,
+              ./images/team-02-desktop@2x.jpg 2x
+            "
+            type="image/jpg"
+            media="(min-width: 1360px)"
+            width="420"
+            height="280"
+          />
+
+          <source
+            srcset="
+              ./images/team-02-tablet.jpg    1x,
+              ./images/team-02-tablet@2x.jpg 2x
+            "
+            type="image/jpg"
+            media="(min-width: 768px)"
+            width="223"
+            height="148"
+          />
+
+          <source
+            srcset="
+              ./images/team-02-mobile.jpg    1x,
+              ./images/team-02-mobile@2x.jpg 2x
+            "
+            type="image/jpg"
+            media="(min-width: 320px)"
+            width="280"
+            height="186"
+          />
+
+          <img
+            src="./images/team-02-mobile.jpg"
+            alt="cup of coffe"
+            width="280"
+            height="186"
+          />
+        </picture>
+        <h3 class="card__title">John Doe</h3>
+        <p class="card__bottom-text">President</p>
+        <ul class="socpublic-list list">
+          <li class="socpublic__item">
+            <a
+              href="https://www.facebook.com"
+              class="socpublic__link link"
+              aria-label="Facebook"
+            >
+              <svg class="socpublic__icon" width="35" height="35">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socpublic__item">
+            <a
+              href="https://www.twitter.com"
+              class="socpublic__link link"
+              aria-label="Twitter"
+            >
+              <svg class="socpublic__icon" width="35" height="35">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="socpublic__item">
+            <a
+              href="https://www.youtube.com"
+              class="socpublic__link link"
+              aria-label="Youtube"
+            >
+              <svg class="socpublic__icon" width="35" height="35">
+                <use href="./images/icons.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socpublic__item">
+            <a
+              href="https://www.linkedin.com"
+              class="socpublic__link link"
+              aria-label="Linkedin"
+            >
+              <svg class="socpublic__icon" width="35" height="35">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </li>
-      <li class="team-member">
-        <img
-          src="/src/images/steve.jpg"
-          alt="our-team-1"
-          width="420"
-          height="280"
-        />
-        <h3 class="member-name">Steve Smith</h3>
-        <p class="member-position">Marketing Head</p>
-        <ul class="network-links list">
-          <li>
-            <a class="network-icon" href="#" rel="noopener nofollow noreferrer"
-              ><svg width="35" height="35">
-                <use href="#"></use></svg
-            ></a>
+      <li class="card__item">
+        <picture>
+          <source
+            srcset="
+              ./images/team-03-desktop.jpg    1x,
+              ./images/team-03-desktop@2x.jpg 2x
+            "
+            type="image/jpg"
+            media="(min-width: 1360px)"
+            width="420"
+            height="280"
+          />
+
+          <source
+            srcset="
+              ./images/team-03-tablet.jpg    1x,
+              ./images/team-03-tablet@2x.jpg 2x
+            "
+            type="image/jpg"
+            media="(min-width: 768px)"
+            width="223"
+            height="148"
+          />
+
+          <source
+            srcset="
+              ./images/team-03-mobile.jpg    1x,
+              ./images/team-03-mobile@2x.jpg 2x
+            "
+            type="image/jpg"
+            media="(min-width: 320px)"
+            width="280"
+            height="186"
+          />
+
+          <img
+            src="./images/team-03-mobile.jpg"
+            alt="cup of coffe"
+            width="280"
+            height="186"
+          />
+        </picture>
+        <h3 class="card__title">John Doe</h3>
+        <p class="card__bottom-text">President</p>
+        <ul class="socpublic-list list">
+          <li class="socpublic__item">
+            <a
+              href="https://www.facebook.com"
+              class="socpublic__link link"
+              aria-label="Facebook"
+            >
+              <svg class="socpublic__icon" width="35" height="35">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socpublic__item">
+            <a
+              href="https://www.twitter.com"
+              class="socpublic__link link"
+              aria-label="Twitter"
+            >
+              <svg class="socpublic__icon" width="35" height="35">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="socpublic__item">
+            <a
+              href="https://www.youtube.com"
+              class="socpublic__link link"
+              aria-label="Youtube"
+            >
+              <svg class="socpublic__icon" width="35" height="35">
+                <use href="./images/icons.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socpublic__item">
+            <a
+              href="https://www.linkedin.com"
+              class="socpublic__link link"
+              aria-label="Linkedin"
+            >
+              <svg class="socpublic__icon" width="35" height="35">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </li>
