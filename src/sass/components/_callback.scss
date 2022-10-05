@@ -67,6 +67,10 @@
 .callback-form__label:nth-child(2) {
   display: inline-block;
   margin-bottom: 53px;
+
+  @include desktop {
+    margin-bottom: 60px;
+  }
 }
 
 .callback-form__input {
