@@ -97,6 +97,10 @@
 }
 
 .blogs_button {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
   background-color: var(--secondary-bg-color);
   font-weight: 400;
   font-size: 16px;
